@@ -1,0 +1,5 @@
+<?php
+
+// Será feito futuramente.
+
+?>
