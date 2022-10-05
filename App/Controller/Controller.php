@@ -1,12 +1,14 @@
 <?php
 
+namespace App\Controller;
+
 abstract class Controller
 {
 
-    protected function render($view, $model = null)
+    protected static function render($view, $model = null)
     {
 
-        $arquivo = "View/Modules" . $view . ".php";
+        $arquivo = "View/Modules/" . $view . ".php";
 
         if(file_exists($arquivo))
         {
@@ -18,7 +20,7 @@ abstract class Controller
         else
         {
 
-            exit("View inexistente! Arquivo solicitado: " . $arquivo);
+            exit("View inexistente! Arquivo solicitado: " . $view . ".php");
 
         }
 
