@@ -21,6 +21,10 @@ switch($url)
         LoginController::Login();
     break;
 
+    case "login/autenticar":
+        LoginController::Autenticar();
+    break;
+
     case "/logado":
         LoginController::Logado();
     break;

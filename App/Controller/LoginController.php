@@ -18,6 +18,13 @@ class LoginController extends Controller
 
     }
 
+    public static function Autenticar()
+    {
+
+        
+
+    }
+
     public static function Logado()
     {
 
