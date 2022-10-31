@@ -21,39 +21,31 @@
 
             <div id="image">
 
-                <img src="/View/Modules/Login/Form/img/dev.jpeg" width="100%" height="100%"/>
+                
 
             </div>
 
             <div class="form">
 
-                <h1 style="color: #FFFF00;"> Login </h1>
+                <form method="post" action="/autentificacao" class="conteudo_form">
 
-                <div class="campos">
+                    <h1 style="color: #FFFF00;"> LOGIN </h1>
 
-                    <form method="post" action="/autentificacao">
+                    <label for="username"> Usuário: </label>
+                    <br/>
+                    <input name="username" required/>
 
-                        <label for="username"> Usuário: </label>
-                        <br/>
-                        <br/>
-                        <input name="username"/>
+                    <br/>
 
-                        <br/>
-                        <br/>
+                    <label for="password"> Senha: </label>
+                    <br/>
+                    <input name="password" required/>
 
-                        <label for="password"> Senha: </label>
-                        <br/>
-                        <br/>
-                        <input name="password"/>
+                    <br/>
 
-                        <br/>
-                        <br/>
+                    <button type="submit"> ENTRAR </button>
 
-                        <button type="submit"> Entrar </button>
-
-                    </form>
-
-                </div>
+                </form>
 
             </div>
 

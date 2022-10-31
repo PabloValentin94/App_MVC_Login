@@ -1,6 +1,8 @@
 *{
 
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 
 }
 
@@ -8,10 +10,10 @@ body{
 
     width: 100vw;
     height: 100vh;
-    margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(#FF00FF, #C71585, #9400D3, #4B0082);
 
 }
 
@@ -20,7 +22,7 @@ body{
     width: 70%;
     height: 60%;
     display: flex;
-    background-color: #000000;
+    background-color: transparent;
     border: 4px solid #000000;
 
 }
@@ -30,8 +32,10 @@ body{
     width: 60%;
     height: 100%;
     margin-right: 2.5px;
-    /*border: 1px dotted #000000;*/
-    /*background-image: url("/View/Modules/Login/Form/img/dev.jpeg");*/
+    background-image: url("/View/Modules/Login/Form/img/dev.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 101%;
+    border-right: 5px solid #000000;
 
 }
 
@@ -39,11 +43,43 @@ body{
 
     width: 40%;
     height: 100%;
-    display: block;
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: #C3C3C3;
+    background-color: transparent;
     margin-left: 2.5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.conteudo_form label{
+
+    color: #FFFFFF;
+
+}
+
+.conteudo_form input{
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.conteudo_form h1{
+
+    margin-bottom: 30px;
+
+}
+
+.conteudo_form button{
+
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #008000;
+    color: #FFFFFF;
+    border: 2px dotted #FFFFFF;
+    border-radius: 20px;
 
 }
