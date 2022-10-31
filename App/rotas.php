@@ -21,13 +21,13 @@ switch($url)
         LoginController::Login();
     break;
 
-    case "login/autenticar":
+    /*case "login/autenticar":
         LoginController::Autenticar();
     break;
 
     case "/logado":
         LoginController::Logado();
-    break;
+    break;*/
 
 }
 

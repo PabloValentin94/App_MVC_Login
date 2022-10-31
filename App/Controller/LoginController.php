@@ -18,7 +18,7 @@ class LoginController extends Controller
 
     }
 
-    public static function Autenticar()
+    /*public static function Autenticar()
     {
 
         
@@ -30,7 +30,7 @@ class LoginController extends Controller
 
         parent::render("MainPage/MainPage");
 
-    }
+    }*/
 
 }
 
