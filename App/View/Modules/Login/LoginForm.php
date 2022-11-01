@@ -29,7 +29,7 @@
 
             <div class="form">
 
-                <form method="post" action="autentificacao" class="conteudo_form">
+                <form method="post" action="/login/autentificacao" class="conteudo_form">
 
                     <h1 style="color: #FFFF00;"> LOGIN </h1>
 
@@ -47,7 +47,7 @@
 
                     <br/>
 
-                    <button> ENTRAR </button>
+                    <button type="submit"> ENTRAR </button>
 
                 </form>
 

@@ -40,14 +40,12 @@ class LoginController extends Controller
 
         $model->GetByNameAndPassword($usuario, $senha);
 
-        echo "Teste";
-
     }
 
     public static function Logado()
     {
 
-        parent::render("MainPage/Mainpage");
+        parent::render("MainPage/MainPage");
     
     }
 

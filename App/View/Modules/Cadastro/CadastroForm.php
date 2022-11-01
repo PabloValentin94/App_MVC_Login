@@ -27,7 +27,7 @@
 
             </div>
 
-            <div class="form">
+            <!--<div class="form">
 
                 <form method="post" action="#" class="conteudo_form">
 
@@ -58,7 +58,7 @@
 
                 </form>
 
-            </div>
+            </div>-->
 
         </div>
         

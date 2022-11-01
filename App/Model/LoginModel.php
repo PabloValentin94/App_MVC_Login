@@ -18,8 +18,6 @@ class LoginModel extends Model
 
         $dados_usuario = $dao->SelectByNameAndPassword($usuario, $senha);
 
-        echo "Teste";
-
         // Se for true.
         if($dados_usuario)
         {
