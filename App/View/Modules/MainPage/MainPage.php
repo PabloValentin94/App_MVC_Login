@@ -10,11 +10,19 @@
 
     <title> Página Principal </title>
 
+    <link rel="stylesheet" type="text/css" href="/View/Modules/MainPage/css/Styles.css"/>
+
 </head>
 
 <body>
 
-    <!--<h1> Login efetuado com sucesso! </h1>-->
+    <div class="container">
+
+        <h1 style="color: #FFFF00; margin-bottom: 5%"> Área Restrita </h1>
+
+        <img src="/View/Modules/MainPage/img/restricted_area.png">
+
+    </div>
     
 </body>
 

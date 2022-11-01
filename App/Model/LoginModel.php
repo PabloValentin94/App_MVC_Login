@@ -7,21 +7,31 @@ use App\DAO\LoginDAO;
 class LoginModel extends Model
 {
 
-    public function Logar($usuario, $senha)
+    //public $rows;
+
+    public function GetByNameAndPassword($usuario, $senha)
     {
 
         include "DAO/LoginDAO.php";
 
         $dao = new LoginDAO();
 
-        parent::$rows = $dao->Logar($usuario, $senha);
+        $dados_usuario = $dao->SelectByNameAndPassword($usuario, $senha);
 
-        $usuarios_encontrados = $rows;
+        echo "Teste";
 
-        if($usuarios_encontrados != null)
+        // Se for true.
+        if($dados_usuario)
         {
 
-            
+            header("Location: /logado");
+
+        }
+
+        else
+        {
+
+            echo "Usuário não encontrado!";
 
         }
 

@@ -32,10 +32,10 @@ body{
     width: 60%;
     height: 100%;
     margin-right: 2.5px;
-    background-image: url("/View/Modules/Login/Form/img/dev.jpeg");
+    background-image: url("/View/Modules/Login/img/dev.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 101%;
-    border-right: 5px solid #000000;
+    border-right: 4px solid #000000;
 
 }
 
@@ -61,8 +61,10 @@ body{
 
 .conteudo_form input{
 
+    padding: 5px;
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
 
 }
 
@@ -81,5 +83,14 @@ body{
     color: #FFFFFF;
     border: 2px dotted #FFFFFF;
     border-radius: 20px;
+    font-weight: bold;
+
+}
+
+.conteudo_form button:hover{
+
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    cursor: pointer;
 
 }

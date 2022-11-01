@@ -1,0 +1,30 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#FF00FF, #C71585, #9400D3, #4B0082);
+
+}
+
+.container{
+
+    width: 60vw;
+    height: 60vh;
+    display: block;
+    text-align: center;
+    padding-top: 8.5%;
+    background-color: transparent;
+    border: 5px solid #000000;
+
+}

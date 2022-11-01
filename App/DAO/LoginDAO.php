@@ -14,7 +14,7 @@ class LoginDAO extends DAO
 
     }
 
-    public function Logar($usuario, $senha)
+    public function SelectByNameAndPassword($usuario, $senha)
     {
 
         $sql = "SELECT * FROM usuario WHERE nome_usuario = ? AND senha = MD5(?)";
@@ -27,7 +27,7 @@ class LoginDAO extends DAO
 
         $stmt->execute();
 
-        $stmt->fetchAll(PDO::FETCH_CLASS);
+        return $stmt->fetchall(PDO::FETCH_CLASS);
 
     }
 

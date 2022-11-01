@@ -11,7 +11,9 @@
         <title> Tela de Login </title>
 
         <!-- Especificar o caminho desde a pasta raíz, senão o arquivo não será reconhecido. -->
-        <link rel="stylesheet" type="text/css" href="View/Modules/Login/Form/css/Styles.css"/>
+        <link rel="stylesheet" type="text/css" href="/View/Modules/Login/css/Styles.css"/>
+
+        <link rel="shortcut icon" href="/View/Modules/Login/img/icon.png"/>
 
     </head>
 
@@ -27,23 +29,25 @@
 
             <div class="form">
 
-                <form method="post" action="/autentificacao" class="conteudo_form">
+                <form method="post" action="autentificacao" class="conteudo_form">
 
                     <h1 style="color: #FFFF00;"> LOGIN </h1>
 
                     <label for="username"> Usuário: </label>
                     <br/>
-                    <input name="username" required/>
+                    <input name="user_name" type="text"
+                    placeholder="E-mail ou nome de usuário" required/>
 
                     <br/>
 
                     <label for="password"> Senha: </label>
                     <br/>
-                    <input name="password" required/>
+                    <input name="password" type="text"
+                    placeholder="Senha" required/>
 
                     <br/>
 
-                    <button type="submit"> ENTRAR </button>
+                    <button> ENTRAR </button>
 
                 </form>
 

@@ -13,21 +13,22 @@ $url = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 switch($url)
 {
 
-    case "/":
-        echo "Página Inicial (Teste)";
+    case "/cadastro":
+        LoginController::Cadastro();
     break;
 
     case "/login":
         LoginController::Login();
     break;
 
-    /*case "login/autenticar":
-        LoginController::Autenticar();
+    case "/autentificacao":
+        LoginController::Autentificar();
+        echo "Teste";
     break;
 
     case "/logado":
         LoginController::Logado();
-    break;*/
+    break;
 
 }
 
