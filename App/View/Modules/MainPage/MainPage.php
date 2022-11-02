@@ -18,9 +18,28 @@
 
     <div class="container">
 
-        <h1 style="color: #FFFF00; margin-bottom: 5%"> Área Restrita </h1>
+        <div class="conteudo">
 
-        <img src="/View/Modules/MainPage/img/restricted_area.png">
+            <div id="title">
+
+                <h1 style="color: #FFFF00;"> ÁREA RESTRITA </h1>
+
+            </div>
+
+            <nav class="botoes">
+
+                <a href="/alterar"> <button id="btn_alterar"> ALTERAR INFORMAÇÕES </button> </a>
+                <a href="/logout"> <button id="btn_sair"> SAIR </button> </a>
+
+            </nav>
+
+        </div>
+
+        <div id="image">
+
+            <img src="/View/Modules/MainPage/img/restricted_area.png">
+
+        </div>
 
     </div>
     

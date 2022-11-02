@@ -4,6 +4,10 @@ namespace App\Model;
 
 use App\DAO\LoginDAO;
 
+include "Model/Model.php";
+
+include "DAO/LoginDAO.php";
+
 class LoginModel extends Model
 {
 
@@ -12,15 +16,17 @@ class LoginModel extends Model
     public function GetByNameAndPassword($usuario, $senha)
     {
 
-        include "DAO/LoginDAO.php";
-
         $dao = new LoginDAO();
 
-        $dados_usuario = $dao->SelectByNameAndPassword($usuario, $senha);
+        $this->rows = $dao->SelectByNameAndPassword($usuario, $senha);
 
         // Se for true.
-        if($dados_usuario)
+        if($this->rows)
         {
+
+            /*var_dump($this->rows);
+
+            exit();*/
 
             header("Location: /logado");
 
@@ -28,6 +34,8 @@ class LoginModel extends Model
 
         else
         {
+
+            //var_dump($this->rows);
 
             echo "Usuário não encontrado!";
 

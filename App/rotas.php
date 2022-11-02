@@ -13,6 +13,10 @@ $url = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 switch($url)
 {
 
+    case "/":
+        echo "Tela Inicial";
+    break;
+
     case "/cadastro":
         LoginController::Cadastro();
     break;
@@ -28,6 +32,9 @@ switch($url)
     case "/logado":
         LoginController::Logado();
     break;
+
+    default:
+        echo "Error 404";
 
 }
 

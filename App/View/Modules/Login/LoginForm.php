@@ -11,6 +11,7 @@
         <title> Tela de Login </title>
 
         <!-- Especificar o caminho desde a pasta raíz, senão o arquivo não será reconhecido. -->
+        
         <link rel="stylesheet" type="text/css" href="/View/Modules/Login/css/Styles.css"/>
 
         <link rel="shortcut icon" href="/View/Modules/Login/img/icon.png"/>
@@ -23,7 +24,7 @@
 
             <div id="image">
 
-                
+                <!--  -->
 
             </div>
 

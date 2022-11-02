@@ -4,6 +4,8 @@ namespace App\DAO;
 
 use \PDO;
 
+include "DAO/DAO.php";
+
 class LoginDAO extends DAO
 {
 
@@ -19,7 +21,7 @@ class LoginDAO extends DAO
 
         $sql = "SELECT * FROM usuario WHERE nome_usuario = ? AND senha = MD5(?)";
 
-        $stmt = parent::$conexao->prepare($sql);
+        $stmt = $this->conexao->prepare($sql);
 
         $stmt->bindValue(1, $usuario);
 
