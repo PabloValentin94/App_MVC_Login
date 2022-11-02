@@ -13,13 +13,6 @@ include "Controller/Controller.php";
 class LoginController extends Controller
 {
 
-    public static function Cadastro()
-    {
-
-        parent::render("Cadastro/CadastroForm");
-
-    }
-
     public static function Login()
     {
 
@@ -42,10 +35,21 @@ class LoginController extends Controller
 
     }
 
+    public static function Erro()
+    {
+
+        parent::render("Login/LoginError");
+
+    }
+
     public static function Logado()
     {
 
-        parent::render("MainPage/MainPage");
+        include "Model/LoginModel.php";
+
+        $model = new LoginModel();
+
+        parent::render("MainPage/MainPage", $model);
     
     }
 

@@ -2,8 +2,6 @@
 
 namespace App\DAO;
 
-use \PDO;
-
 include "DAO/DAO.php";
 
 class CadastroDAO extends DAO

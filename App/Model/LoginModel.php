@@ -6,8 +6,6 @@ use App\DAO\LoginDAO;
 
 include "Model/Model.php";
 
-include "DAO/LoginDAO.php";
-
 class LoginModel extends Model
 {
 
@@ -15,6 +13,8 @@ class LoginModel extends Model
 
     public function GetByNameAndPassword($usuario, $senha)
     {
+
+        include "DAO/LoginDAO.php";
 
         $dao = new LoginDAO();
 
@@ -37,7 +37,15 @@ class LoginModel extends Model
 
             //var_dump($this->rows);
 
-            echo "Usuário não encontrado!";
+            //echo "Usuário não encontrado!";
+
+            print("javascript:alert('teste')");
+
+            exit();
+
+            header("Location: /login/error");
+
+            //echo "<script type='javascript'> Senha ou usuário incorretos! Tente novamente. </script>";
 
         }
 
