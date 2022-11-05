@@ -6,10 +6,6 @@ namespace App\Controller;
 
 use App\Model\LoginModel;
 
-// Includes:
-
-include "Controller/Controller.php";
-
 class LoginController extends Controller
 {
 

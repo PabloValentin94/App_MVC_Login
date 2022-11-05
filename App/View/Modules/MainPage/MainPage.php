@@ -10,7 +10,11 @@
 
     <title> Página Principal </title>
 
+    <!-- Especificar o caminho desde a pasta raíz, senão o arquivo não será reconhecido. -->
+
     <link rel="stylesheet" type="text/css" href="/View/Modules/MainPage/css/Styles.css"/>
+
+    <link rel="shortcut icon" href="/View/Modules/MainPage/img/icon.png"/>
 
 </head>
 

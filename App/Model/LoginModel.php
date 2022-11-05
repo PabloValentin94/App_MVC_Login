@@ -4,8 +4,6 @@ namespace App\Model;
 
 use App\DAO\LoginDAO;
 
-include "Model/Model.php";
-
 class LoginModel extends Model
 {
 
@@ -38,10 +36,6 @@ class LoginModel extends Model
             //var_dump($this->rows);
 
             //echo "Usuário não encontrado!";
-
-            print("javascript:alert('teste')");
-
-            exit();
 
             header("Location: /login/error");
 

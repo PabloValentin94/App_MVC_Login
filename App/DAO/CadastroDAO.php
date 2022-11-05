@@ -2,8 +2,6 @@
 
 namespace App\DAO;
 
-include "DAO/DAO.php";
-
 class CadastroDAO extends DAO
 {
 
@@ -14,10 +12,10 @@ class CadastroDAO extends DAO
 
     }
 
-    public function Insert($usuario = null, $email = null, $senha)
+    public function Insert($senha, $usuario = null, $email = null)
     {
 
-        $sql = "INSERT INTO usuario(nome_usuaeio, email, senha) VALUES(?, ?, ?)";
+        $sql = "INSERT INTO usuario(nome_usuario, email, senha) VALUES(?, ?, MD5(?))";
 
         $stmt = $this->conexao->prepare($sql);
 
@@ -36,6 +34,17 @@ class CadastroDAO extends DAO
         {
 
             $stmt->bindValue(1, NULL);
+
+            $stmt->bindValue(2, $email);
+
+            $stmt->bindValue(3, $senha);
+
+        }
+
+        else
+        {
+
+            $stmt->bindValue(1, $usuario);
 
             $stmt->bindValue(2, $email);
 

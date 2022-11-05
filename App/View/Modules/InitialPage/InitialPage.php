@@ -10,7 +10,11 @@
 
         <title> Tela Inicial </title>
 
+        <!-- Especificar o caminho desde a pasta raíz, senão o arquivo não será reconhecido. -->
+
         <link rel="stylesheet" type="text/css" href="/View/Modules/InitialPage/css/Styles.css"/>
+
+        <link rel="shortcut icon" href="/View/Modules/InitialPage/img/icon.png"/>
 
     </head>
 

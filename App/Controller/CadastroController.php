@@ -2,9 +2,7 @@
 
 namespace App\Controller;
 
-//use
-
-include "Controller/Controller.php";
+use App\Model\CadastroModel;
 
 class CadastroController extends Controller
 {
@@ -13,6 +11,30 @@ class CadastroController extends Controller
     {
 
         parent::render("Cadastro/CadastroForm");
+
+    }
+
+    public static function Adicionar()
+    {
+
+        include "Model/CadastroModel.php";
+
+        $model = new CadastroModel();
+
+        $usuario = $_POST["user_name"];
+
+        $email = $_POST["email"];
+
+        $senha = $_POST["password"];
+
+        $model->Registrar($senha, $usuario, $email);
+
+    }
+
+    public static function Erro()
+    {
+
+        parent::render("Cadastro/CadastroError");
 
     }
 

@@ -34,17 +34,17 @@
 
                     <h1 style="color: #FFFF00;"> LOGIN </h1>
 
-                    <label for="username"> Usuário: </label>
+                    <label for="user_name"> Nome de usuário ou E-mail: </label>
                     <br/>
-                    <input name="user_name" type="text"
-                    placeholder="E-mail ou nome de usuário" required/>
+                    <input name="user_name" type="text" maxlength="75"
+                    placeholder="Até 75 caracteres" required/>
 
                     <br/>
 
                     <label for="password"> Senha: </label>
                     <br/>
-                    <input name="password" type="text"
-                    placeholder="Senha" required/>
+                    <input name="password" type="text" maxlength="20"
+                    placeholder="Até 20 caracteres" required/>
 
                     <br/>
 

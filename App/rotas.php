@@ -5,6 +5,12 @@
 use App\Controller\LoginController;
 use App\Controller\CadastroController;
 
+// Classes Superglobais:
+
+include "Controller/Controller.php";
+include "Model/Model.php";
+include "DAO/DAO.php";
+
 // Includes:
 
 include "Controller/LoginController.php";
@@ -23,6 +29,12 @@ switch($url)
 
     case "/cadastro":
         CadastroController::Cadastro();
+    break;
+    case "/cadastro/criando":
+        CadastroController::Adicionar();
+    break;
+    case "/cadastro/error":
+        CadastroController::Erro();
     break;
 
 

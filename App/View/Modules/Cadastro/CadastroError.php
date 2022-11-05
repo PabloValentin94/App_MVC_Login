@@ -8,17 +8,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title> Tela de Login </title>
+        <title> Tela de Cadastro </title>
 
         <!-- Especificar o caminho desde a pasta raíz, senão o arquivo não será reconhecido. -->
 
-        <link rel="stylesheet" type="text/css" href="/View/Modules/login/css/Error.css"/>
+        <link rel="stylesheet" type="text/css" href="/View/Modules/Cadastro/css/Error.css"/>
 
-        <link rel="shortcut icon" href="/View/Modules/login/img/error.png"/>
+        <link rel="shortcut icon" href="/View/Modules/Cadastro/img/error.png"/>
 
         <script>
 
-            javascript:alert("Erro de login! Tente novamente.");
+            javascript:alert("Erro de cadastro! Tente novamente.");
 
         </script>
 
@@ -36,7 +36,7 @@
 
             <div id="botao">
 
-                <a href="/login"> <button> Voltar </button> </a>
+                <a href="/cadastro"> <button> Voltar </button> </a>
 
             </div>
 
