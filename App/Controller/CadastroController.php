@@ -10,7 +10,11 @@ class CadastroController extends Controller
     public static function Cadastro()
     {
 
-        parent::render("Cadastro/CadastroForm");
+        include "Model/CadastroModel.php";
+
+        $model = new CadastroModel();
+
+        parent::render("Cadastro_Alteracao/Cadastro_AlteracaoForm", $model);
 
     }
 
@@ -34,7 +38,11 @@ class CadastroController extends Controller
     public static function Erro()
     {
 
-        parent::render("Cadastro/CadastroError");
+        include "Model/CadastroModel.php";
+
+        $model = new CadastroModel();
+
+        parent::render("Cadastro_Alteracao/Cadastro_AlteracaoError", $model);
 
     }
 

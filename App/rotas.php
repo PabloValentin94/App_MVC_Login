@@ -4,6 +4,7 @@
 
 use App\Controller\LoginController;
 use App\Controller\CadastroController;
+use App\Controller\AlteracaoController;
 
 // Classes Superglobais:
 
@@ -15,6 +16,7 @@ include "DAO/DAO.php";
 
 include "Controller/LoginController.php";
 include "Controller/CadastroController.php";
+include "Controller/AlteracaoController.php";
 
 $url = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
@@ -53,11 +55,29 @@ switch($url)
 
 
 
+    case "/alteracao":
+        AlteracaoController::Alteracao();
+    break;
+
+    case "/alteracao/mudando":
+        AlteracaoController::Modificar();
+    break;
+
+    case "/alteracao/error":
+        AlteracaoController::Erro();
+    break;
+
+
 
     case "/logado":
         LoginController::Logado();
     break;
 
+
+
+    case "/logout":
+        LoginController::Logout();
+    break;
 
 
 

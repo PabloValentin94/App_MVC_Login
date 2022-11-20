@@ -27,7 +27,7 @@ class LoginController extends Controller
 
         $senha = $_POST["password"];
 
-        $model->GetByNameAndPassword($usuario, $senha);
+        $model->GetByNameOrEmailAndPassword($usuario, $senha);
 
     }
 
@@ -47,6 +47,15 @@ class LoginController extends Controller
 
         parent::render("MainPage/MainPage", $model);
     
+    }
+
+    public static function Logout()
+    {
+
+        session_destroy();
+
+        header("Location: /");
+
     }
 
 }

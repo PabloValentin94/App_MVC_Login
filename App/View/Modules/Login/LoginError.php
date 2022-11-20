@@ -8,13 +8,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title> Tela de Login </title>
+        <title> Tela de Login - Erro </title>
 
         <!-- Especificar o caminho desde a pasta raíz, senão o arquivo não será reconhecido. -->
 
-        <link rel="stylesheet" type="text/css" href="/View/Modules/login/css/Error.css"/>
+        <link rel="stylesheet" type="text/css" href="/View/Modules/Login/css/Error.css"/>
 
-        <link rel="shortcut icon" href="/View/Modules/login/img/error.png"/>
+        <link rel="shortcut icon" href="/View/Modules/Login/img/error.png"/>
 
         <script>
 
@@ -30,7 +30,7 @@
 
             <div id="image">
 
-                <img src="/View/Modules/Cadastro/img/error.png" style="height: 100%;">
+                <img src="/View/Modules/Login/img/error.png" style="height: 100%;">
 
             </div>
 

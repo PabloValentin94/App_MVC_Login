@@ -32,7 +32,7 @@
 
             <nav class="botoes">
 
-                <a href="/alterar"> <button id="btn_alterar"> ALTERAR INFORMAÇÕES </button> </a>
+                <a href="/alteracao"> <button id="btn_alterar"> ALTERAR INFORMAÇÕES </button> </a>
                 <a href="/logout"> <button id="btn_sair"> SAIR </button> </a>
 
             </nav>

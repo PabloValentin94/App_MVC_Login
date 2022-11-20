@@ -7,6 +7,8 @@ use App\DAO\CadastroDAO;
 class CadastroModel extends Model
 {
 
+    public $necessidade = "CADASTRO";
+
     public function Registrar($senha, $usuario = null, $email = null)
     {
 

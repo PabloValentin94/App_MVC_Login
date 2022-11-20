@@ -9,7 +9,7 @@ class LoginModel extends Model
 
     //public $rows;
 
-    public function GetByNameAndPassword($usuario, $senha)
+    public function GetByNameOrEmailAndPassword($usuario, $senha)
     {
 
         include "DAO/LoginDAO.php";
@@ -26,6 +26,21 @@ class LoginModel extends Model
 
             exit();*/
 
+            foreach($this->rows as $registro)
+            {
+
+                $_SESSION["id_login"] = $registro->id;
+
+                $_SESSION["usuario"] = $registro->nome_usuario;
+
+                $_SESSION["email"] = $registro->email;
+
+                $_SESSION["senha"] = $registro->senha;
+
+                break;
+
+            }
+
             header("Location: /logado");
 
         }
@@ -33,13 +48,37 @@ class LoginModel extends Model
         else
         {
 
-            //var_dump($this->rows);
+            $this->rows = $dao->SelectByEmailAndPassword($usuario, $senha);
 
-            //echo "Usuário não encontrado!";
+            // Se for true.
+            if($this->rows)
+            {
 
-            header("Location: /login/error");
+                foreach($this->rows as $registro)
+                {
 
-            //echo "<script type='javascript'> Senha ou usuário incorretos! Tente novamente. </script>";
+                    $_SESSION["id_login"] = $registro->id;
+
+                    $_SESSION["usuario"] = $registro->nome_usuario;
+
+                    $_SESSION["email"] = $registro->email;
+
+                    $_SESSION["senha"] = $registro->senha;
+
+                    break;
+
+                }
+
+                header("Location: /logado");
+
+            }
+
+            else
+            {
+
+                header("Location: /login/error");
+
+            }
 
         }
 
