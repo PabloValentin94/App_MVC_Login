@@ -24,7 +24,10 @@ switch($url)
 {
 
     case "/":
-        include "View/Modules/InitialPage/InitialPage.php";
+        if(!isset($_SESSION["id_login"]))
+            include "View/Modules/InitialPage/InitialPage.php";
+        else
+            header("Location: /logado");
     break;
 
 
