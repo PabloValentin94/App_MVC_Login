@@ -12,8 +12,6 @@ class CadastroModel extends Model
     public function Registrar($senha, $usuario = null, $email = null)
     {
 
-        include "DAO/CadastroDAO.php";
-
         $dao = new CadastroDAO();
 
         $dao->Insert($senha, $usuario, $email);

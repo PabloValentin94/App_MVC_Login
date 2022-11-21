@@ -8,7 +8,7 @@ abstract class Controller
     protected static function render($view, $model = null)
     {
 
-        $arquivo = "View/Modules/" . $view . ".php";
+        $arquivo = VIEWS . $view . ".php";
 
         if(file_exists($arquivo))
         {

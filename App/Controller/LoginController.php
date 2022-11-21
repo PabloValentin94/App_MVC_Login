@@ -19,8 +19,6 @@ class LoginController extends Controller
     public static function Autentificar()
     {
 
-        include "Model/LoginModel.php";
-
         $model = new LoginModel();
 
         $usuario = $_POST["user_name"];
@@ -40,8 +38,6 @@ class LoginController extends Controller
 
     public static function Logado()
     {
-
-        include "Model/LoginModel.php";
 
         $model = new LoginModel();
 

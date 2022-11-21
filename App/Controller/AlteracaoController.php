@@ -10,18 +10,30 @@ class AlteracaoController extends Controller
     public static function Alteracao()
     {
 
-        include "Model/AlteracaoModel.php";
+        // isset: verifica se uma variável existe.
 
-        $model = new AlteracaoModel();
+        // Abaixo estamos verificando se a sessão existe. Se ela existir permitimos o acesso, senão permanescemos na tela atual.
 
-        parent::render("Cadastro_Alteracao/Cadastro_AlteracaoForm", $model);
+        if(isset($_SESSION["id_login"]))
+        {
+
+            $model = new AlteracaoModel();
+
+            parent::render("Cadastro_Alteracao/Cadastro_AlteracaoForm", $model);
+
+        }
+
+        else
+        {
+
+            header("Location: /");
+
+        }
 
     }
 
     public static function Modificar()
     {
-
-        include "Model/AlteracaoModel.php";
 
         $model = new AlteracaoModel();
 
@@ -39,8 +51,6 @@ class AlteracaoController extends Controller
 
     public static function Erro()
     {
-
-        include "Model/AlteracaoModel.php";
 
         $model = new AlteracaoModel();
 

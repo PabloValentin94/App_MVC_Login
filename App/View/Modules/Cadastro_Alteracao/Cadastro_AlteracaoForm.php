@@ -42,7 +42,7 @@
 
                     <form method="post" action="/alteracao/mudando" class="conteudo_form">
 
-                        <h1 style="color: #FFFF00;"> ALTERACAO </h1>
+                        <h1 style="color: #FFFF00;"> ALTERAÇÃO </h1>
 
                         <label for="user_name"> Nome de usuário: </label>
                         <br/>

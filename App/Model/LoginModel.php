@@ -12,8 +12,6 @@ class LoginModel extends Model
     public function GetByNameOrEmailAndPassword($usuario, $senha)
     {
 
-        include "DAO/LoginDAO.php";
-
         $dao = new LoginDAO();
 
         $this->rows = $dao->SelectByNameAndPassword($usuario, $senha);
@@ -56,6 +54,10 @@ class LoginModel extends Model
 
                 foreach($this->rows as $registro)
                 {
+
+                    echo $registro;
+
+                    exit();
 
                     $_SESSION["id_login"] = $registro->id;
 

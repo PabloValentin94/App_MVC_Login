@@ -12,8 +12,6 @@ class AlteracaoModel extends Model
     public function Alterar($id, $usuario, $email, $senha)
     {
 
-        include "DAO/AlteracaoDAO.php";
-
         $dao = new AlteracaoDAO();
 
         $exito = $dao->Update($id, $usuario, $email, $senha);
