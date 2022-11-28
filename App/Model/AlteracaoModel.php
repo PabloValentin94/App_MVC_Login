@@ -32,7 +32,7 @@ class AlteracaoModel extends Model
         else
         {
 
-            header("Location: /alterar/error");
+            header("Location: /alteracao/error");
 
         }
 

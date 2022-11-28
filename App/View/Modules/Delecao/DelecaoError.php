@@ -8,18 +8,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title> Tela de Login - Erro </title>
+        <title> Tela de Deleção - Erro </title>
 
         <!-- Especificar o caminho desde a pasta raíz, senão o arquivo não será reconhecido. -->
 
-        <link rel="stylesheet" type="text/css" href="/View/Modules/Login/css/Error.css"/>
+        <link rel="stylesheet" type="text/css" href="/View/Modules/Delecao/css/Error.css"/>
 
-        <link rel="shortcut icon" href="/View/Modules/Login/img/error.png"/>
+        <link rel="shortcut icon" href="/View/Modules/Delecao/img/error.png"/>
 
         <script>
 
-            javascript:alert("Erro ao tentar logar! Verifique se sua conta realmente existe " +
-            "e tente novamente.");
+            javascript:alert("Erro ao tentar excluir a conta! Tente novamente.");
 
         </script>
 
@@ -31,13 +30,13 @@
 
             <div id="image">
 
-                <img src="/View/Modules/Login/img/error.png" style="height: 100%;">
+                <img src="/View/Modules/Delecao/img/error.png" style="height: 100%;">
 
             </div>
 
             <div id="botao">
 
-                <a href="/login"> <button> Voltar </button> </a>
+                <a href="/logado"> <button> Voltar </button> </a>
 
             </div>
 

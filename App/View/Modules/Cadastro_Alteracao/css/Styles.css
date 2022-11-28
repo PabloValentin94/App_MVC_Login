@@ -27,12 +27,24 @@ body{
 
 }
 
-#image{
+#image_cadastro{
 
     width: 60%;
     height: 100%;
     margin-right: 2.5px;
-    background-image: url("/View/Modules/Cadastro_Alteracao/img/dev.png");
+    background-image: url("/View/Modules/Cadastro_Alteracao/img/dev_cadastro.png");
+    background-repeat: no-repeat;
+    background-size: 100% 101%;
+    border-right: 4px solid #000000;
+
+}
+
+#image_alteracao{
+
+    width: 60%;
+    height: 100%;
+    margin-right: 2.5px;
+    background-image: url("/View/Modules/Cadastro_Alteracao/img/dev_alteracao.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 101%;
     border-right: 4px solid #000000;

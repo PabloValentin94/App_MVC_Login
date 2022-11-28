@@ -33,7 +33,10 @@
             <nav class="botoes">
 
                 <a href="/alteracao"> <button id="btn_alterar"> ALTERAR INFORMAÇÕES </button> </a>
+
                 <a href="/logout"> <button id="btn_sair"> SAIR </button> </a>
+                
+                <a href="/delecao/removendo"> <button id="btn_excluir"> EXCLUIR CONTA </button> </a>
 
             </nav>
 

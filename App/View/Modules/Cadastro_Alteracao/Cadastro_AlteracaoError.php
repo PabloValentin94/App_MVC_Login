@@ -12,9 +12,21 @@
 
             <title> Tela de Cadastro - Erro </title>
 
+            <script>
+
+                javascript:alert("Erro ao tentar cadastrar! Tente novamente.");
+
+            </script>
+
         <?php elseif($model->necessidade == "ALTERACAO"): ?>
 
             <title> Tela de Alteração de Dados - Erro </title>
+
+            <script>
+
+                javascript:alert("Erro ao tentar alterar seus dados! Tente novamente.");
+
+            </script>
 
         <?php endif ?>
 
@@ -23,12 +35,6 @@
         <link rel="stylesheet" type="text/css" href="/View/Modules/Cadastro_Alteracao/css/Error.css"/>
 
         <link rel="shortcut icon" href="/View/Modules/Cadastro_Alteracao/img/error.png"/>
-
-        <script>
-
-            javascript:alert("Erro de cadastro! Tente novamente.");
-
-        </script>
 
     </head>
 
@@ -44,7 +50,15 @@
 
             <div id="botao">
 
-                <a href="/cadastro"> <button> Voltar </button> </a>
+                <?php if($model->necessidade == "CADASTRO"): ?>
+
+                    <a href="/cadastro"> <button> Voltar </button> </a>
+
+                <?php elseif($model->necessidade == "ALTERACAO"): ?>
+
+                    <a href="/alteracao"> <button> Voltar </button> </a>
+
+                <?php endif ?>
 
             </div>
 

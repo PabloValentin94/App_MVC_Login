@@ -103,6 +103,21 @@ body{
 
 }
 
+#btn_excluir{
+
+    background-color: #FFA500;
+    border: 2px dotted #FFFFFF;
+    cursor: pointer;
+
+}
+
+#btn_excluir:hover{
+
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+
+}
+
 .botoes a{
 
     text-decoration: none;

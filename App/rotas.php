@@ -5,6 +5,7 @@
 use App\Controller\LoginController;
 use App\Controller\CadastroController;
 use App\Controller\AlteracaoController;
+use App\Controller\DelecaoController;
 
 // Classes Superglobais:
 
@@ -17,6 +18,7 @@ include "DAO/DAO.php";
 include "Controller/LoginController.php";
 include "Controller/CadastroController.php";
 include "Controller/AlteracaoController.php";
+include "Controller/DelecaoController.php";
 
 $url = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 
@@ -68,6 +70,16 @@ switch($url)
 
     case "/alteracao/error":
         AlteracaoController::Erro();
+    break;
+
+
+
+    case "/delecao/removendo":
+        DelecaoController::Apagar();
+    break;
+
+    case "/delecao/error":
+        DelecaoController::Erro();
     break;
 
 

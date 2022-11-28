@@ -30,11 +30,23 @@
 
         <div class="container">
 
-            <div id="image">
+            <?php if($model->necessidade == "ALTERACAO"): ?>
 
-                
+                <div id="image_alteracao">
 
-            </div>
+
+
+                </div>
+
+            <?php elseif($model->necessidade == "CADASTRO"): ?>
+
+                <div id="image_cadastro">
+
+
+
+                </div>
+
+            <?php endif ?>
 
             <div class="form">
 
